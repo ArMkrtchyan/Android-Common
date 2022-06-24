@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="errorMessage" format="string" />
+    <attr name="isPreventClick" format="boolean" />
+    <attr name="isRequiredForValidation" format="boolean" />
+
+    <declare-styleable name="EditTextACBA">
+        <attr name="validator" format="enum">
+            <enum name="regex" value="0" />
+            <enum name="password" value="1" />
+            <enum name="email" value="2" />
+        </attr>
+        <attr name="errorMessage" />
+        <attr name="isRequiredForValidation" />
+        <attr name="withRegex" format="string" />
+        <attr name="changeRegexTo" format="string" />
+        <attr name="minLength" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="TextInputLayoutACBA" />
+
+    <declare-styleable name="CommonButton">
+        <attr name="clickInterval" format="integer" />
+        <attr name="isPreventClick" />
+    </declare-styleable>
+
+    <declare-styleable name="CheckBoxACBA">
+        <attr name="errorMessage" />
+        <attr name="mustBeChecked" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CommonToolbar" />
+
+    <declare-styleable name="TextViewACBA">
+        <attr name="isPreventClick" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageViewACBA">
+        <attr name="isPreventClick" />
+    </declare-styleable>
+
+    <declare-styleable name="DefaultStylesTheme">
+        <attr name="buttonStyle" format="reference" />
+        <attr name="commonToolbarStyle" format="reference" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,53 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdk projectCompileSdk
+
+    defaultConfig {
+        minSdk projectMinSdk
+        targetSdk projectTargetSdk
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+    namespace 'com.github.armkrtchyan.common'
+}
+
+dependencies {
+    kapt kaptDependencies.glide
+
+    api workManager
+    api androidXDependencies.values()
+    api networkDependencies.values()
+    api koinDependencies.values()
+    api liveDataVMDependencies.values()
+    api googleDependencies.values()
+    api firebaseDependencies.values()
+    api navigationDependencies.values()
+    api coroutineDependencies.values()
+    api mediaDependencies.values()
+    api testDependencies.values()
+}
