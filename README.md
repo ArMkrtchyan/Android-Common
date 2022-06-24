@@ -8,5 +8,5 @@
 	}
 
 	dependencies {
-	        implementation 'com.github.ArMkrtchyan:Android-Common:0.0.1-alpha1'
+	        implementation 'com.github.ArMkrtchyan:Android-Common:0.0.1-alpha-01'
 	}
