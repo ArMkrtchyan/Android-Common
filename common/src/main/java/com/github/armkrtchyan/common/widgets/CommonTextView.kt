@@ -6,7 +6,7 @@ import androidx.appcompat.widget.AppCompatTextView
 import com.github.armkrtchyan.common.R
 import com.github.armkrtchyan.common.shared.PreventDoubleClickListener
 
-class TextViewACBA : AppCompatTextView {
+class CommonTextView : AppCompatTextView {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
         init(attrs)
@@ -19,8 +19,8 @@ class TextViewACBA : AppCompatTextView {
     private var mIsPreventDoubleClick = true
 
     private fun init(attrs: AttributeSet) {
-        context.obtainStyledAttributes(attrs, R.styleable.TextViewACBA).apply {
-            mIsPreventDoubleClick = getBoolean(R.styleable.TextViewACBA_isPreventClick, true)
+        context.obtainStyledAttributes(attrs, R.styleable.CommonTextView).apply {
+            mIsPreventDoubleClick = getBoolean(R.styleable.CommonTextView_isPreventClick, true)
             recycle()
         }
     }

@@ -5,7 +5,7 @@
     <attr name="isPreventClick" format="boolean" />
     <attr name="isRequiredForValidation" format="boolean" />
 
-    <declare-styleable name="EditTextACBA">
+    <declare-styleable name="CommonEditText">
         <attr name="validator" format="enum">
             <enum name="regex" value="0" />
             <enum name="password" value="1" />
@@ -18,25 +18,25 @@
         <attr name="minLength" format="integer" />
     </declare-styleable>
 
-    <declare-styleable name="TextInputLayoutACBA" />
+    <declare-styleable name="CommonTextInputLayout" />
 
     <declare-styleable name="CommonButton">
         <attr name="clickInterval" format="integer" />
         <attr name="isPreventClick" />
     </declare-styleable>
 
-    <declare-styleable name="CheckBoxACBA">
+    <declare-styleable name="CommonCheckBox">
         <attr name="errorMessage" />
         <attr name="mustBeChecked" format="boolean" />
     </declare-styleable>
 
     <declare-styleable name="CommonToolbar" />
 
-    <declare-styleable name="TextViewACBA">
+    <declare-styleable name="CommonTextView">
         <attr name="isPreventClick" />
     </declare-styleable>
 
-    <declare-styleable name="ImageViewACBA">
+    <declare-styleable name="CommonImageView">
         <attr name="isPreventClick" />
     </declare-styleable>
 

@@ -8,7 +8,7 @@ import com.github.armkrtchyan.common.shared.extensions.showToast
 import com.github.armkrtchyan.common.validators.Validator
 import kotlin.properties.Delegates
 
-class CheckBoxACBA : AppCompatCheckBox, Validator {
+class CommonCheckBox : AppCompatCheckBox, Validator {
 
     private var mIsRequiredForValidation by Delegates.notNull<Boolean>()
     private var mErrorMessage: String? = null
@@ -23,9 +23,9 @@ class CheckBoxACBA : AppCompatCheckBox, Validator {
     }
 
     private fun init(attrs: AttributeSet) {
-        context.obtainStyledAttributes(attrs, R.styleable.CheckBoxACBA).apply {
-            mErrorMessage = getString(R.styleable.CheckBoxACBA_errorMessage)
-            mIsRequiredForValidation = getBoolean(R.styleable.CheckBoxACBA_mustBeChecked, false)
+        context.obtainStyledAttributes(attrs, R.styleable.CommonCheckBox).apply {
+            mErrorMessage = getString(R.styleable.CommonCheckBox_errorMessage)
+            mIsRequiredForValidation = getBoolean(R.styleable.CommonCheckBox_mustBeChecked, false)
             recycle()
         }
     }

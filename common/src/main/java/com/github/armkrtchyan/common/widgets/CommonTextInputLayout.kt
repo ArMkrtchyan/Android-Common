@@ -5,7 +5,7 @@ import android.util.AttributeSet
 import com.github.armkrtchyan.common.R
 import com.google.android.material.textfield.TextInputLayout
 
-class TextInputLayoutACBA : TextInputLayout {
+class CommonTextInputLayout : TextInputLayout {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
         init(attrs)
@@ -16,7 +16,7 @@ class TextInputLayoutACBA : TextInputLayout {
     }
 
     private fun init(attrs: AttributeSet) {
-        context.obtainStyledAttributes(attrs, R.styleable.TextInputLayoutACBA).apply {
+        context.obtainStyledAttributes(attrs, R.styleable.CommonTextInputLayout).apply {
             recycle()
         }
     }

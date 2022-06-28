@@ -6,7 +6,7 @@ import androidx.appcompat.widget.AppCompatImageView
 import com.github.armkrtchyan.common.R
 import com.github.armkrtchyan.common.shared.PreventDoubleClickListener
 
-class ImageViewACBA : AppCompatImageView {
+class CommonImageView : AppCompatImageView {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
         init(attrs)
@@ -19,8 +19,8 @@ class ImageViewACBA : AppCompatImageView {
     private var mIsPreventDoubleClick = true
 
     private fun init(attrs: AttributeSet) {
-        context.obtainStyledAttributes(attrs, R.styleable.ImageViewACBA).apply {
-            mIsPreventDoubleClick = getBoolean(R.styleable.ImageViewACBA_isPreventClick, true)
+        context.obtainStyledAttributes(attrs, R.styleable.CommonImageView).apply {
+            mIsPreventDoubleClick = getBoolean(R.styleable.CommonImageView_isPreventClick, true)
             recycle()
         }
     }
